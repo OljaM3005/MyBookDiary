@@ -28,6 +28,15 @@ public class LoginPage extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), RegisterPage.class);
                 startActivity(i);
+
+            }
+        });
+        signIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Explicit Intent
+                Intent j = new Intent(getApplicationContext(), MainPage.class);
+                startActivity(j);
             }
         });
     }
