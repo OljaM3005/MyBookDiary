@@ -40,8 +40,6 @@ public class MainPage extends AppCompatActivity implements NavigationBarView.OnI
             case R.id.profile:
                 getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, profileFragment).commit();
                 return  true;
-
-
         }
 
         return false;

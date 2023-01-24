@@ -1,12 +1,16 @@
 package com.example.mybookdiary;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -46,6 +50,9 @@ public class DiaryFragment extends Fragment {
         return fragment;
     }
 
+
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,7 +60,8 @@ public class DiaryFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-    }
+
+   }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
