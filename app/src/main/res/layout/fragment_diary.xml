@@ -6,6 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".DiaryFragment">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_books"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:minHeight="?actionBarSize"
+        android:theme="?actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="My Books"
+           android:fontFamily="@font/mandala"
+           android:textSize="40sp"
+           android:layout_gravity="center|bottom"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="38sp"
+            android:layout_gravity="end"
+            android:textStyle="bold"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
